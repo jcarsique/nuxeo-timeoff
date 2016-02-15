@@ -33,6 +33,7 @@ var glob = require('glob-all');
 var historyApiFallback = require('connect-history-api-fallback');
 var packageJson = require('./package.json');
 var crypto = require('crypto');
+require('es6-promise').polyfill();
 
 var AUTOPREFIXER_BROWSERS = [
   'ie >= 10',
